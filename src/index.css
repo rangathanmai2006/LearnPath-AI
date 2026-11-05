@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom glow and backdrop effects */
+.gradient-border {
+  position: relative;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(139, 92, 246, 0.15));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.gradient-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.18) 0%, rgba(15, 23, 42, 0) 70%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #f472b6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-primary {
+  background: linear-gradient(135deg, #93c5fd 0%, #60a5fa 50%, #818cf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* AI Tutor Markdown Rendering Styles */
+.tutor-markdown {
+  color: #e2e8f0;
+  line-height: 1.65;
+  font-size: 0.875rem;
+}
+
+.tutor-markdown h1,
+.tutor-markdown h2,
+.tutor-markdown h3,
+.tutor-markdown h4 {
+  font-weight: 700;
+  color: #f8fafc;
+  margin-top: 1.1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.35;
+}
+
+.tutor-markdown h1:first-child,
+.tutor-markdown h2:first-child,
+.tutor-markdown h3:first-child,
+.tutor-markdown h4:first-child {
+  margin-top: 0;
+}
+
+.tutor-markdown h1 { font-size: 1.25rem; color: #93c5fd; }
+.tutor-markdown h2 { font-size: 1.15rem; color: #a5b4fc; }
+.tutor-markdown h3 { font-size: 1.05rem; color: #c7d2fe; }
+.tutor-markdown h4 { font-size: 0.95rem; color: #e0e7ff; }
+
+.tutor-markdown p {
+  margin-bottom: 0.75rem;
+}
+
+.tutor-markdown p:last-child {
+  margin-bottom: 0;
+}
+
+.tutor-markdown strong {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.tutor-markdown em {
+  font-style: italic;
+  color: #cbd5e1;
+}
+
+.tutor-markdown ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.tutor-markdown ol {
+  list-style-type: decimal;
+  padding-left: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.tutor-markdown li {
+  margin-bottom: 0.25rem;
+  line-height: 1.55;
+}
+
+.tutor-markdown code:not(pre code) {
+  background-color: rgba(30, 41, 59, 0.9);
+  color: #38bdf8;
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.85em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tutor-markdown pre {
+  background-color: #020617;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  overflow-x: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.tutor-markdown blockquote {
+  border-left: 3px solid #6366f1;
+  padding-left: 0.75rem;
+  color: #94a3b8;
+  font-style: italic;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
